@@ -1,4 +1,4 @@
-FROM node:14.15.1-buster
+FROM node:15.14-buster
 
 LABEL maintainer "Dennis Boeckmann <dev@dbck.de>"
 LABEL description "This image reads weather information from the openweather api and submit it to a mqtt broker."
@@ -20,6 +20,7 @@ ENV OPENWEATHER_MQTT_TOPIC=openweather/current_weather
 RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM"
 
 WORKDIR /app
-COPY root/app/* /app/
+COPY root/app/package.json /app/
+COPY root/app/app.js /app/
 RUN npm install
 CMD [ "node", "app.js" ]
