@@ -6,6 +6,7 @@ This image reads weather information from the openweather api and submit it to a
 
 Please specify at least the `OPENWEATHER_API_KEY` to be able to access the openweather api and `OPENWEATHER_CITY` to receive the correct data.
 
+```
 OPENWEATHER_LANG=en
 OPENWEATHER_UNITS=metric
 OPENWEATHER_CRON_TIMEZONE=Europe/Berlin
@@ -14,6 +15,7 @@ OPENWEATHER_API_URL=api.openweathermap.org
 OPENWEATHER_API_KEY=
 OPENWEATHER_CITY=Berlin
 OPENWEATHER_MQTT_TOPIC=openweather/current_weather
+```
 
 # License
 
