@@ -1,0 +1,6 @@
+version: "3"
+services:
+  openweather2mqtt:
+    image: dbck/openweather2mqtt:${TAG}
+    build:
+      context: ./build
