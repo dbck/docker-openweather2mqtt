@@ -1,4 +1,4 @@
-const process = require('process')
+const process = require('process');
 const env=process.env;
 const https = require('https');
 const mqtt = require('mqtt');
@@ -10,7 +10,6 @@ process.on('SIGINT', () => {
   console.info("Interrupted")
   process.exit(0)
 })
-
 
 pm2.launchBus((err, bus) => {
     console.log('connected', bus);
@@ -34,7 +33,6 @@ pm2.launchBus((err, bus) => {
 
 mqttClient.on('connect', () => {
     console.log("Connected!");
-
 
     const http_options = {
       hostname: `${env.OPENWEATHER_API_URL}`,
