@@ -1,5 +1,5 @@
 {
-  "name": "openweather-to-mqtt",
+  "name": "openweather2mqtt",
   "version": "1.0.0",
   "description": "Persist openweather current weather to mqtt broker",
   "main": "app.js",
